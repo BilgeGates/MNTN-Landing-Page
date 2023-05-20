@@ -1,0 +1,77 @@
+/* ! Fonts Styles */
+@import url("https://fonts.googleapis.com/css2?family=Bentham&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+/* ! Colors */
+
+:root {
+  --white-color: white;
+  --black-color: black;
+  --first-color: #0b1d26;
+}
+
+/* ! All Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--first-color);
+  font-family: "Bentham", serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/* ! Header Styles */
+
+header .container {
+  width: 90%;
+  margin: auto;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+header ul {
+  display: flex;
+  gap: 2rem;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+header .menu a {
+  font-weight: 700;
+}
+
+header .account {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .user a {
+  font-size: 1.0625rem;
+}
+
+header .user-icon a {
+  font-size: 1.6rem;
+}
