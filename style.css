@@ -1,14 +1,11 @@
-/* ! Fonts Styles */
-@import url("https://fonts.googleapis.com/css2?family=Bentham&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
-
 /* ! Colors */
 
 :root {
   --white-color: white;
   --black-color: black;
   --first-color: #0b1d26;
+  --second-color: #333;
+  --thirdh-color: #fbd784;
 }
 
 /* ! All Styles */
@@ -25,8 +22,8 @@ html {
 
 body {
   background-color: var(--first-color);
-  font-family: "Bentham", serif;
   font-size: 16px;
+  font-family: sans-serif;
 }
 
 ul {
@@ -55,7 +52,6 @@ header nav {
 header ul {
   display: flex;
   gap: 2rem;
-  font-family: "Nanum Gothic", sans-serif;
 }
 
 header .menu a {
@@ -74,4 +70,109 @@ header .user a {
 
 header .user-icon a {
   font-size: 1.6rem;
+}
+
+/* ! Main Styles */
+
+.start {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 55rem;
+  margin: auto;
+  margin-top: 10rem;
+  line-height: 5rem;
+}
+
+.start .start-head {
+  display: flex;
+  gap: 2rem;
+}
+
+.start .start-head-second {
+  color: var(--thirdh-color);
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.start .start-body {
+  font-size: 4rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.start-footer button {
+  width: 9rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  background: transparent;
+  color: var(--white-color);
+  font-size: 1.125rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.easy-access {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: -15rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.social .follow {
+  color: var(--white-color);
+  transform: rotate(90deg);
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 0.9375rem;
+}
+
+.social #social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-content {
+  background: transparent;
+  transition: all 1s ease-in;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sidebar-list-menu li a {
+  display: inline-block;
+  line-height: 3.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.sidebar-list-menu li a.active {
+  font-weight: 900;
 }
