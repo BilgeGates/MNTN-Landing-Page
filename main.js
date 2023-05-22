@@ -13,6 +13,7 @@ $("[dd-sidebar-tab]").on("click", function () {
     500
   );
 });
+
 $(window).scroll(function (event) {
   var scrollPos = $(document).scrollTop();
   $(".sidebar-list-menu li a").each(function () {

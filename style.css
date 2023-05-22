@@ -102,7 +102,8 @@ header .user-icon a {
   text-transform: uppercase;
 }
 
-.start-footer button {
+.start-footer button,
+.first-article-footer button {
   width: 9rem;
   height: 1.5rem;
   display: flex;
@@ -175,4 +176,76 @@ header .user-icon a {
 
 .sidebar-list-menu li a.active {
   font-weight: 900;
+}
+
+.articles {
+  width: 90%;
+  margin: auto;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.first-article {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.articles svg {
+  display: flex;
+}
+
+.first-article-info .first-article-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.first-title {
+  color: var(--thirdh-color);
+  font-weight: 800;
+  font-size: 1.125rem;
+}
+
+.first-article-head {
+  color: var(--white-color);
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+.first-article-body {
+  color: var(--white-color);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.first-article-footer button {
+  color: var(--thirdh-color);
+}
+
+.first-article-bg {
+  font-weight: 700;
+  font-size: 15rem;
+  color: var(--white-color);
+  opacity: 0.1;
+}
+
+#first-article {
+  position: absolute;
+  bottom: -20rem;
+}
+
+#second-article {
+  position: absolute;
+  bottom: -68rem;
+}
+
+#thirdh-article {
+  position: absolute;
+  bottom: -118rem;
 }
