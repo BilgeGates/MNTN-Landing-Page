@@ -249,3 +249,40 @@ header .user-icon a {
   position: absolute;
   bottom: -118rem;
 }
+
+/* ! Footer Styles */
+
+.footer {
+  width: 90%;
+  margin: auto;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mntn-body {
+  font-size: 1.125rem;
+  color: var(--white-color);
+  font-weight: 700;
+  line-height: 2rem;
+  width: 21rem;
+  margin: 3rem 0;
+}
+
+.mntn-footer a {
+  font-size: 1.12rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.more-the-blog,
+.more-the-mntn {
+  line-height: 2.5rem;
+}
+
+.more-the-blog-head a,
+.more-the-mntn-head a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--thirdh-color);
+}
