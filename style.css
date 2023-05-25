@@ -72,6 +72,10 @@ header .user-icon a {
   font-size: 1.6rem;
 }
 
+.menu-bars {
+  display: none;
+}
+
 /* ! Main Styles */
 
 .start {
@@ -285,4 +289,65 @@ header .user-icon a {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--thirdh-color);
+}
+
+/* ! Responsive Styles */
+
+@media (max-width: 425px) {
+  nav {
+    width: 90%;
+    margin: auto;
+    position: relative;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav .account {
+    position: absolute;
+    left: 50%;
+  }
+
+  .menu-bars {
+    display: block;
+  }
+
+  .social {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .social .follow {
+    transform: rotate(0);
+  }
+
+  .social #social {
+    flex-direction: row;
+    gap: 0.8rem;
+  }
+
+  .sidebar,
+  .social {
+    margin-top: -50rem;
+  }
+
+  .sidebar-list-menu {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .start {
+    width: 90%;
+    margin: auto;
+    margin-top: 10rem;
+  }
+
+  .start .start-head-second {
+    font-size: 1rem;
+  }
+
+  .start .start-body {
+    font-size: 1.5rem;
+  }
 }
