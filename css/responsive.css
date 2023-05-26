@@ -2,49 +2,35 @@
   nav {
     width: 90%;
     margin: auto;
-    position: relative;
-  }
-
-  nav .menu-bars {
-    position: absolute;
-    right: -1rem;
-    top: 1.8rem;
-  }
-
-  nav .user {
-    display: none;
-  }
-
-  nav .user-icon {
-    position: absolute;
-    left: 1.5rem;
   }
 
   .easy-access {
-    flex-direction: column;
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
   }
 
-  .sidebar {
-    text-align: center;
-  }
-
+  .sidebar,
   .social {
-    margin: 0 0 0 1.2rem;
+    margin-bottom: 10rem;
   }
 
   .start {
     width: 90%;
     margin: auto;
-    line-height: 1rem;
   }
 
   .start .start-head {
-    gap: 1rem;
-    line-height: 3rem;
+    display: flex;
+  }
+
+  .start .start-head-second {
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
 
   .start .start-body {
+    width: 90%;
     margin: auto;
     text-align: center;
   }
@@ -132,11 +118,17 @@
   .start {
     width: 90%;
     margin: auto;
-    margin-top: 10rem;
+    padding-bottom: 5rem;
+  }
+
+  .start .start-head-second {
+    font-size: 1rem;
+    width: 80%;
   }
 
   .start .start-head {
-    justify-content: center;
+    display: flex;
+    align-items: center;
   }
 
   .start .start-body {
@@ -155,8 +147,9 @@
     gap: 1rem;
   }
 
-  .easy-access {
-    margin-top: -18rem;
+  .social,
+  .sidebar {
+    margin-top: -25rem;
   }
 
   .social .follow {
@@ -176,7 +169,6 @@
   .articles {
     width: 90%;
     margin: auto;
-    margin-top: 80%;
   }
 
   .first-article {
@@ -246,7 +238,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   nav {
     width: 90%;
     margin: auto;
