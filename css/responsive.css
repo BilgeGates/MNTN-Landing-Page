@@ -176,7 +176,7 @@
   .articles {
     width: 90%;
     margin: auto;
-    margin-top: 100%;
+    margin-top: 80%;
   }
 
   .first-article {
@@ -243,5 +243,120 @@
     margin: auto;
     margin-top: 2rem;
     gap: 3.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    width: 90%;
+    margin: auto;
+    position: relative;
+  }
+
+  .menu-bars {
+    display: none;
+  }
+
+  .start {
+    width: 70%;
+    margin: auto;
+    margin-top: 10rem;
+  }
+
+  .start .start-head {
+    justify-content: center;
+  }
+
+  .start .start-body {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .start .start-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .easy-access {
+    margin-top: -11rem;
+  }
+
+  .articles {
+    width: 90%;
+    margin: auto;
+    margin-top: 8rem;
+  }
+
+  .first-article {
+    flex-direction: column-reverse;
+  }
+
+  #first-article-start {
+    flex-direction: column;
+  }
+
+  .first-article-info {
+    text-align: center;
+  }
+
+  .first-article-head {
+    font-size: 2.5rem;
+  }
+
+  .first-article-footer,
+  .first-article-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .articles .article-img img {
+    width: 100%;
+  }
+
+  #first-article {
+    bottom: -235%;
+  }
+
+  #second-article {
+    bottom: -494%;
+  }
+
+  #thirdh-article {
+    bottom: -745%;
+  }
+
+  footer .footer {
+    width: 90%;
+    margin: auto;
+    margin-top: 6rem;
+    flex-direction: column;
+  }
+
+  footer .mntn {
+    text-align: center;
+  }
+
+  .mntn-body,
+  .mntn-footer {
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .more-the-blog,
+  .more-the-mntn {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .more-the-blog-head a,
+  .more-the-mntn-head a {
+    font-size: 1.2rem;
+  }
+
+  .lists {
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
   }
 }
